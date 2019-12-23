@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Grid } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Grid} from "semantic-ui-react";
 
 const Section = styled(Grid.Column)`
   display: flex !important;

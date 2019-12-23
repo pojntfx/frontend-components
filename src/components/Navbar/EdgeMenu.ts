@@ -1,6 +1,6 @@
-import styled from "react-emotion";
-import { Menu } from "semantic-ui-react";
-import { EDGE_ITEM_WIDTH } from "./EdgeItem";
+import styled from "@emotion/styled";
+import {Menu} from "semantic-ui-react";
+import {EDGE_ITEM_WIDTH} from "./EdgeItem";
 
 const EDGE_MENU_WIDTH = "350px";
 const CENTER_MENU_WIDTH = "1676px";

@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Grid } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Grid} from "semantic-ui-react";
 
 const ShortcutModalGroupWrapper = styled(Grid.Column)`
   /* Second two last elements, or last element if odd amount of elements */

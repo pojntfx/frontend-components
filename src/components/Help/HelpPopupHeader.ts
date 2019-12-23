@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Popup } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Popup} from "semantic-ui-react";
 
 const HelpPopupHeader = styled(Popup.Header)`
   display: flex;
@@ -7,4 +7,4 @@ const HelpPopupHeader = styled(Popup.Header)`
   align-items: center;
 `;
 
-export { HelpPopupHeader };
+export {HelpPopupHeader};

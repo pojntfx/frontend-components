@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Segment } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Segment} from "semantic-ui-react";
 
 const ShortcutModalKeyWrapper = styled(Segment)`
   padding-top: 0.25em !important;
@@ -9,4 +9,4 @@ const ShortcutModalKeyWrapper = styled(Segment)`
   margin: 0 !important;
 `;
 
-export { ShortcutModalKeyWrapper };
+export {ShortcutModalKeyWrapper};

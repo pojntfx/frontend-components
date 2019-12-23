@@ -1,4 +1,4 @@
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 const ShortcutModalKeyWrapperDivider = styled("span")`
   padding-left: 0.5em !important;

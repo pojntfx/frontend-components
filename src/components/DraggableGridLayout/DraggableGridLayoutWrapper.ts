@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { WidthProvider, Responsive } from "react-grid-layout";
+import styled from "@emotion/styled";
+import {Responsive, WidthProvider} from "react-grid-layout";
 
 const ResponsiveReactGridLayout = WidthProvider(Responsive);
 

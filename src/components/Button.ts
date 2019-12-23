@@ -1,8 +1,8 @@
-import { Button as ButtonTemplate } from "semantic-ui-react";
-import styled from "react-emotion";
+import {Button as ButtonTemplate} from "semantic-ui-react";
+import styled from "@emotion/styled";
 
 const Button = styled(ButtonTemplate)`
   white-space: nowrap;
 `;
 
-export { Button };
+export {Button};

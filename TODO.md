@@ -1,4 +1,4 @@
-# LibreSat Frontend Components TODO
+# Frontend Components TODO
 
 ## Apps
 

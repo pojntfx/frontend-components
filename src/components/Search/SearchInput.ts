@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Input, InputProps } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Input, InputProps} from "semantic-ui-react";
 
 const SearchInput = styled(Input)`
   ${(props: InputProps) =>
@@ -8,4 +8,4 @@ const SearchInput = styled(Input)`
   }
 `;
 
-export { SearchInput };
+export {SearchInput};

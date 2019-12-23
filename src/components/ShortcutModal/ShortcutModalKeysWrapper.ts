@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { HorizontalScrollWrapper } from "../HorizontalScrollWrapper";
+import styled from "@emotion/styled";
+import {HorizontalScrollWrapper} from "../HorizontalScrollWrapper";
 
 const ShortcutModalKeysWrapper = styled(HorizontalScrollWrapper)`
   > *:first-child {
@@ -7,4 +7,4 @@ const ShortcutModalKeysWrapper = styled(HorizontalScrollWrapper)`
   }
 `;
 
-export { ShortcutModalKeysWrapper };
+export {ShortcutModalKeysWrapper};

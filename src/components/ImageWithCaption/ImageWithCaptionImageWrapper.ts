@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Image } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Image} from "semantic-ui-react";
 
 const maxWidth = "600px";
 
@@ -9,4 +9,4 @@ const ImageWithCaptionImageWrapper = styled(Image)`
   margin-top: 4em;
 `;
 
-export { ImageWithCaptionImageWrapper };
+export {ImageWithCaptionImageWrapper};

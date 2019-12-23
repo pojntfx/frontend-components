@@ -1,19 +1,18 @@
-import styled from "react-emotion";
-import { Accordion } from "semantic-ui-react";
-import { IExpandViewWrapperProps } from "../../types";
+import styled from "@emotion/styled";
+import {Accordion} from "semantic-ui-react";
 
 const ExpandViewWrapper = styled(Accordion)`
   & .title {
-    ${(props: { theme: IExpandViewWrapperProps }) =>
-      props.theme.disabled &&
-      props.theme.initiallyClosed &&
-      `color: rgba(40,40,40,.3) !important;`} ${(props: {
-      theme: IExpandViewWrapperProps;
-    }) =>
-      ((props.theme.disabled && !props.theme.initiallyClosed) ||
+    ${(props: any) =>
+    props.theme.disabled &&
+    props.theme.initiallyClosed &&
+    `color: rgba(40,40,40,.3) !important;`} ${(props: {
+    theme: any;
+}) =>
+    ((props.theme.disabled && !props.theme.initiallyClosed) ||
         (props.theme.disabled && props.theme.initiallyClosed)) &&
-      `cursor: default !important;;`};
+    `cursor: default !important;;`};
   }
 `;
 
-export { ExpandViewWrapper };
+export {ExpandViewWrapper};
