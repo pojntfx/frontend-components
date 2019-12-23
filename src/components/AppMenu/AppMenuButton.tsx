@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Help} from "../Help/Help";
+import {Help} from "..";
 import {AppMenuButtonContent} from "./AppMenuButtonContent";
 import {IAppButtonProps} from "./AppMenu";
 

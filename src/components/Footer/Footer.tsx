@@ -7,7 +7,7 @@ import {Section} from "./Section";
 import {LegalGrid} from "./Legal/LegalGrid";
 import {Help, IHelp} from "../Help/Help";
 import {Button} from "../Button";
-import {ShortcutModalView} from "../ShortcutModal/ShortcutModalView";
+import {ShortcutModalView} from "..";
 import {IShortcutModalViewProps} from "../ShortcutModal/ShortcutModal";
 
 interface IFooterProps {

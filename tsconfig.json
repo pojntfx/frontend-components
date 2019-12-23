@@ -7,7 +7,10 @@
     "outDir": "dist/",
     "declaration": true,
     "declarationDir": "dist/",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "noImplicitUseStrict": true,
     "alwaysStrict": false
   }

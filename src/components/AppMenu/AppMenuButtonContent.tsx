@@ -10,7 +10,7 @@ const AppMenuButtonContent = ({
                                   title,
                                   ...otherProps
                               }: IAppButtonContentProps) => (
-    <Button active={link === "/identity" ? true : false} fluid {...otherProps}>
+    <Button active={link === "/identity"} fluid {...otherProps}>
         <AppMenuButtonHeader icon as="h5">
             <Icon name={icon}/>
             {title}

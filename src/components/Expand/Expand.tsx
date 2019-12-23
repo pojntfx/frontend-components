@@ -16,11 +16,6 @@ interface IExpandViewProps extends IExpandProps {
     onToggle: AccordionTitleProps["onClick"];
 }
 
-interface IExpandViewWrapperProps {
-    disabled: IExpandProps["disabled"];
-    initiallyClosed: IExpandProps["initiallyClosed"];
-}
-
 class Expand extends Component<IExpandProps> {
     state = {
         isOpen: !this.props.initiallyClosed
@@ -45,6 +40,5 @@ class Expand extends Component<IExpandProps> {
 }
 
 export {Expand};
-export {IExpandViewWrapperProps};
 export {IExpandViewProps};
 export {IExpandProps};

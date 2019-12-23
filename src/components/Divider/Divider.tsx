@@ -14,10 +14,6 @@ interface IDividerProps {
     icon: SemanticICONS;
 }
 
-interface IDividerWrapperProps {
-    offset: IDividerProps["offset"];
-}
-
 const Divider = ({offset, title, icon, ...otherProps}: IDividerProps) => (
     <DividerWrapper offset={offset} horizontal {...otherProps}>
         <DividerIcon name={icon}/>
@@ -26,5 +22,4 @@ const Divider = ({offset, title, icon, ...otherProps}: IDividerProps) => (
 );
 
 export {Divider};
-export {IDividerWrapperProps};
 export {IDividerProps};
