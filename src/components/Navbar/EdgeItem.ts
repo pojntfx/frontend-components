@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Menu } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Menu} from "semantic-ui-react";
 
 const EDGE_ITEM_WIDTH = "11em";
 

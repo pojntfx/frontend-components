@@ -1,4 +1,4 @@
-import styled from "react-emotion";
+import styled from "@emotion/styled";
 
 const ImageWithCaptionCaption = styled("span")`
   margin-top: 1em;

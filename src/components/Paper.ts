@@ -1,5 +1,5 @@
-import { Segment } from "semantic-ui-react";
-import styled from "react-emotion";
+import {Segment} from "semantic-ui-react";
+import styled from "@emotion/styled";
 
 const Paper = styled(Segment)`
   margin-top: 1em !important;
@@ -8,4 +8,4 @@ const Paper = styled(Segment)`
   }
 `;
 
-export { Paper };
+export {Paper};

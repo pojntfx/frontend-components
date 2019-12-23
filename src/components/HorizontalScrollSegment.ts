@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Segment } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Segment} from "semantic-ui-react";
 
 const HorizontalScrollSegment = styled(Segment)`
   display: flex;

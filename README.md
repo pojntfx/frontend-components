@@ -1,9 +1,13 @@
-# LibreSat Frontend Components
+# Frontend Components
 
-A simple and opinionated UI library.
+A comprehensive high-level React component collection, based on Semantic UI React.
 
-[![Part of LibreSat](https://img.shields.io/badge/Part%20Of-LibreSat-blue.svg)](https://libresat.space)
+## Installation
 
-## Usage
+A npm package [is available](https://www.npmjs.com/package/@pojntfx/frontend-components).
 
-See [global README](../../README.md).
+## License
+
+Frontend Components (c) 2019 Felix Pojtinger
+
+SPDX-License-Identifier: AGPL-3.0

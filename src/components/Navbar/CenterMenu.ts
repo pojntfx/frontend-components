@@ -1,6 +1,6 @@
-import styled from "react-emotion";
-import { Menu } from "semantic-ui-react";
-import { CENTER_MENU_WIDTH } from "./EdgeMenu";
+import styled from "@emotion/styled";
+import {Menu} from "semantic-ui-react";
+import {CENTER_MENU_WIDTH} from "./EdgeMenu";
 
 const CenterMenu = styled(Menu.Menu)`
   margin: 0 auto !important;
@@ -9,4 +9,4 @@ const CenterMenu = styled(Menu.Menu)`
   }
 `;
 
-export { CenterMenu };
+export {CenterMenu};

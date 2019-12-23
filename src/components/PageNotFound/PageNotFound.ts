@@ -1,5 +1,5 @@
-import { PageNotFoundWrapper } from "./PageNotFoundWrapper";
-import styled from "react-emotion";
+import {PageNotFoundWrapper} from "./PageNotFoundWrapper";
+import styled from "@emotion/styled";
 
 const PageNotFound = styled(PageNotFoundWrapper)`
   padding: 1rem;

@@ -1,17 +1,17 @@
 import * as React from "react";
-import styled from "react-emotion";
-import { Help } from "../../Help/Help";
-import { ISocialButton } from "../../../types";
+import styled from "@emotion/styled";
+import {Help} from "../../Help/Help";
+import {ISocialButton} from "../../../types";
 
 const SocialButtonTemplate = (
-  { img, title, link, help, ...otherProps }: ISocialButton,
-  index: number
+    {img, title, link, help, ...otherProps}: ISocialButton,
+    index: number
 ) => (
-  <Help {...help}>
-    <a href={link} key={index} {...otherProps}>
-      <img src={img} alt={title} />
-    </a>
-  </Help>
+    <Help {...help}>
+        <a href={link} key={index} {...otherProps}>
+            <img src={img} alt={title}/>
+        </a>
+    </Help>
 );
 
 const SocialButton = styled(SocialButtonTemplate)`

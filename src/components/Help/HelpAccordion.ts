@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Accordion } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Accordion} from "semantic-ui-react";
 
 const HelpAccordion = styled(Accordion)`
   & > .title:not(.active) {
@@ -7,4 +7,4 @@ const HelpAccordion = styled(Accordion)`
   }
 `;
 
-export { HelpAccordion };
+export {HelpAccordion};

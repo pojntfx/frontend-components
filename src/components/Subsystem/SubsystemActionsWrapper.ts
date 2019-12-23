@@ -1,5 +1,5 @@
-import { Grid } from "semantic-ui-react";
-import styled from "react-emotion";
+import {Grid} from "semantic-ui-react";
+import styled from "@emotion/styled";
 
 const SubsystemActionsWrapper = styled(Grid.Column)`
   display: flex !important;

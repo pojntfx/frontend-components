@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Card } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Card} from "semantic-ui-react";
 
 const GalleryItemTemplate = styled(Card)`
   margin-top: 1em !important;

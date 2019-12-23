@@ -1,5 +1,5 @@
-import styled from "react-emotion";
-import { Menu } from "semantic-ui-react";
+import styled from "@emotion/styled";
+import {Menu} from "semantic-ui-react";
 
 const MainMenu = styled(Menu)`
   overflow-x: auto;
@@ -7,4 +7,4 @@ const MainMenu = styled(Menu)`
   top: 0;
 `;
 
-export { MainMenu };
+export {MainMenu};
