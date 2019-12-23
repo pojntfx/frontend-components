@@ -11,4 +11,14 @@ const PageNotFound = styled(PageNotFoundWrapper)`
   flex-direction: column;
 `;
 
-export { PageNotFound };
+export {PageNotFound};
+
+interface IPageNotFoundProps {
+    image: string;
+    homeLink: string;
+    linkComponent: JSX.Element;
+
+    headComponent(title: string): JSX.Element;
+}
+
+export {IPageNotFoundProps};

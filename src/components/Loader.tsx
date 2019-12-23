@@ -1,17 +1,21 @@
 import * as React from "react";
-import { Loader as LoaderTemplate } from "semantic-ui-react";
-import { ILoaderProps } from "../types";
+import {Loader as LoaderTemplate} from "semantic-ui-react";
 
-const Loader = ({ small, ...otherProps }: ILoaderProps) =>
-  small ? (
-    <LoaderTemplate active inline="centered" {...otherProps} />
-  ) : (
-    <LoaderTemplate
-      active
-      inline="centered"
-      content="Loading ..."
-      {...otherProps}
-    />
-  );
+interface ILoaderProps {
+    small?: boolean;
+}
 
-export { Loader };
+const Loader = ({small, ...otherProps}: ILoaderProps) =>
+    small ? (
+        <LoaderTemplate active inline="centered" {...otherProps} />
+    ) : (
+        <LoaderTemplate
+            active
+            inline="centered"
+            content="Loading ..."
+            {...otherProps}
+        />
+    );
+
+export {Loader};
+export {ILoaderProps};

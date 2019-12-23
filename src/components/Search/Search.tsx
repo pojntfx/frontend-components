@@ -3,8 +3,19 @@ import {Component} from "react";
 import {SearchInput} from "./SearchInput";
 import {Transition} from "semantic-ui-react";
 import {CoverflowItem} from "../Coverflow/Coverflow";
-import {ISearchProps, ISearchResult} from "../../types";
-import {search} from "../../utils/search.util";
+import {search} from "../../utils/search";
+
+interface ISearchProps {
+    query: string;
+    source: any;
+    placeholder: string;
+    linkComponent: JSX.Element;
+}
+
+interface ISearchResult {
+    link: string;
+    imgSrc: string;
+}
 
 class Search extends Component<ISearchProps> {
     state = {
@@ -14,9 +25,7 @@ class Search extends Component<ISearchProps> {
 
     updateResults = (query: ISearchProps["query"]) => {
         this.setState({
-            results:
-                search({source: this.props.source, query}) ||
-                []
+            results: search({source: this.props.source, query}) || []
         });
     };
 
@@ -40,22 +49,11 @@ class Search extends Component<ISearchProps> {
                 />
                 <Transition.Group animation="scale">
                     {this.state.results.map(
-                        (
-                            {
-                                link,
-                                imgSrc,
-                                ...otherProps
-                            }: ISearchResult,
-                            index
-                        ) => (
+                        ({link, imgSrc, ...otherProps}: ISearchResult, index) => (
                             <CoverflowItem
                                 fluid
                                 {...otherProps}
-                                as={
-                                    this
-                                        .props
-                                        .linkComponent
-                                }
+                                as={this.props.linkComponent}
                                 to={link}
                                 key={index}
                                 image={imgSrc}
@@ -69,3 +67,5 @@ class Search extends Component<ISearchProps> {
 }
 
 export {Search};
+export {ISearchResult};
+export {ISearchProps};
