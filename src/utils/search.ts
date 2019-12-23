@@ -1,6 +1,5 @@
 /**
  * Filter an (optionally nested) array using a full-text search
- * @param {SearchParams} param0 source and query to perform on it
  */
 interface ISearch {
     source: any;
@@ -19,7 +18,7 @@ const search = ({source, query: rawQuery}: ISearch) => {
         const getKeywords = (source: ISearch["source"]) => {
             // Add all fields to a (nested) array
             const fields = source.map((item: ISearch["source"]) => Object.keys(item));
-            // Get all getKeywordsed fields
+            // Get all keyword fields
             const keywords = flattenKeywords(fields);
             // Remove duplicates
             return keywords.filter(

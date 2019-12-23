@@ -29,8 +29,6 @@ class Broadcast extends Component<IBroadcastProps> {
                     ? window &&
                     window.localStorage.getItem("libresat-latest-broadcast-visible") ===
                     "true"
-                    ? true
-                    : false
                     : true
         });
 
