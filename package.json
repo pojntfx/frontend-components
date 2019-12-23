@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "@antv/data-set": "^0.10.0",
-    "@libresat/frontend-utils": "^0.0.1-75",
     "bizcharts": "^3.2.5-beta.4",
     "emotion": "^9.2.12",
     "react": "^16.5.2",
