@@ -2,9 +2,9 @@ import * as React from "react";
 import {HeroWrapper} from "./HeroWrapper";
 import {HeroSubHeader} from "./HeroSubHeader";
 import {HeroActions} from "./HeroActions";
-import {VideoModal} from "..";
 import {Button} from "../Button";
 import {SemanticCOLORS, SemanticICONS} from "semantic-ui-react";
+import {VideoModal} from "../..";
 
 interface IHeroProps {
     title: string;
