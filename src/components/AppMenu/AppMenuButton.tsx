@@ -1,7 +1,7 @@
 import * as React from "react";
-import {Help} from "..";
 import {AppMenuButtonContent} from "./AppMenuButtonContent";
 import {IAppButtonProps} from "./AppMenu";
+import {Help} from "../..";
 
 const AppMenuButton = ({
                            title,

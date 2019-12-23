@@ -5,8 +5,8 @@ import {ShortcutModalKeyWrapper} from "./ShortcutModalKeyWrapper";
 import {ShortcutModalGroupWrapper} from "./ShortcutModalGroupWrapper";
 import {ShortcutModalKeysWrapper} from "./ShortcutModalKeysWrapper";
 import {ShortcutModalKeyWrapperDivider} from "./ShortcutModalKeyWrapperDivider";
-import {Help} from "..";
 import {IShortcutModalViewProps} from "./ShortcutModal";
+import {Help} from "../..";
 
 const ShortcutModalView = ({
                                title,

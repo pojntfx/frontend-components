@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
-import {Help} from "../..";
 import {ISocialButton} from "../Footer";
+import {Help} from "../../..";
 
 const SocialButtonTemplate = (
     {img, title, link, help, ...otherProps}: ISocialButton,

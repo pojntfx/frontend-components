@@ -2,8 +2,8 @@ import * as React from "react";
 import {Modal} from "semantic-ui-react";
 import {LegalBadge} from "./LegalBadge";
 import {LegalText} from "./LegalText";
-import {Help} from "../..";
 import {ILegalInfoProps} from "../Footer";
+import {Help} from "../../..";
 
 const LegalInfo = ({
                        product,

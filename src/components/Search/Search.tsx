@@ -2,8 +2,8 @@ import * as React from "react";
 import {Component} from "react";
 import {SearchInput} from "./SearchInput";
 import {Transition} from "semantic-ui-react";
-import {CoverflowItem} from "..";
 import {search} from "../../utils/search";
+import {CoverflowItem} from "../..";
 
 interface ISearchProps {
     query: string;
