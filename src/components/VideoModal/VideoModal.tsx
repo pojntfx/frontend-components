@@ -1,18 +1,25 @@
 import * as React from "react";
-import { IVideoModalProps } from "../../types";
-import { Modal } from "semantic-ui-react";
-import { Button } from "../Button";
-import { VideoModalVideo } from "./VideoModalVideo";
+import {Modal, SemanticICONS} from "semantic-ui-react";
+import {Button} from "../Button";
+import {VideoModalVideo} from "./VideoModalVideo";
+
+interface IVideoModalProps {
+    title: string;
+    header: string;
+    icon: SemanticICONS;
+    video: string;
+    disabled: boolean;
+}
 
 const VideoModal = ({
-  title,
-  header,
-  icon,
-  video,
-  disabled,
-  ...otherProps
-}: IVideoModalProps) => (
-  <Modal
+                        title,
+                        header,
+                        icon,
+                        video,
+                        disabled,
+                        ...otherProps
+                    }: IVideoModalProps) => (
+    <Modal
     trigger={
       <Button secondary icon={icon} content={title} disabled={disabled} />
     }
@@ -27,4 +34,5 @@ const VideoModal = ({
   </Modal>
 );
 
-export { VideoModal };
+export {VideoModal};
+export {IVideoModalProps};

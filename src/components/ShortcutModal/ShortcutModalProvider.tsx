@@ -1,36 +1,36 @@
 import * as React from "react";
-import { Component } from "react";
-import { HotKeys } from "react-hotkeys";
-import { IShortcutModalProviderProps } from "../../types";
+import {Component} from "react";
+import {HotKeys} from "react-hotkeys";
+import {IShortcutModalProviderProps} from "./ShortcutModal";
 
 class ShortcutModalProvider extends Component<IShortcutModalProviderProps> {
-  state = {
-    modalIsOpen: false
-  };
-
-  toggleModal = () =>
-    this.setState({
-      modalIsOpen: !this.state.modalIsOpen
-    });
-
-  render() {
-    const keyMap = {
-      openModal: this.props.triggerKey || "?"
+    state = {
+        modalIsOpen: false
     };
 
-    const handlers = {
-      openModal: () => this.toggleModal()
-    };
+    toggleModal = () =>
+        this.setState({
+            modalIsOpen: !this.state.modalIsOpen
+        });
 
-    return (
-      <HotKeys keyMap={keyMap} handlers={handlers}>
-        {this.props.children({
-          modalIsOpen: this.state.modalIsOpen,
-          toggleModal: this.toggleModal
-        })}
-      </HotKeys>
-    );
-  }
+    render() {
+        const keyMap = {
+            openModal: this.props.triggerKey || "?"
+        };
+
+        const handlers = {
+            openModal: () => this.toggleModal()
+        };
+
+        return (
+            <HotKeys keyMap={keyMap} handlers={handlers}>
+                {this.props.children({
+                    modalIsOpen: this.state.modalIsOpen,
+                    toggleModal: this.toggleModal
+                })}
+            </HotKeys>
+        );
+    }
 }
 
-export { ShortcutModalProvider };
+export {ShortcutModalProvider};

@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 import {Help} from "../../Help/Help";
-import {ISocialButton} from "../../../types";
+import {ISocialButton} from "../Footer";
 
 const SocialButtonTemplate = (
     {img, title, link, help, ...otherProps}: ISocialButton,
@@ -25,4 +25,4 @@ const SocialButton = styled(SocialButtonTemplate)`
   }
 `;
 
-export { SocialButton };
+export {SocialButton};

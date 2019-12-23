@@ -1,9 +1,34 @@
 import * as React from "react";
-import {Grid} from "semantic-ui-react";
+import {Grid, SemanticICONS} from "semantic-ui-react";
 import {AppMenuButton} from "./AppMenuButton";
 import {AppMenuSearchInput} from "./AppMenuSearchInput";
-import {Help} from "../Help/Help";
-import {IAppMenuProps} from "../../types";
+import {Help, IHelp} from "../Help/Help";
+import {IActionBarProps} from "../ActionBar/ActionBar";
+
+interface IAppMenuProps {
+    apps: IAppButtonProps[];
+    search: IActionBarProps["search"];
+
+    linkComponent(
+        to: IAppButtonProps["link"],
+        children: JSX.Element
+    ): JSX.Element;
+}
+
+interface IAppButtonProps {
+    title: string;
+    icon: SemanticICONS;
+    link: string;
+    disabled?: boolean;
+    help: IHelp;
+    linkComponent: IAppMenuProps["linkComponent"];
+}
+
+interface IAppButtonContentProps {
+    title: IAppButtonProps["title"];
+    icon: IAppButtonProps["icon"];
+    link: IAppButtonProps["link"];
+}
 
 const AppMenu = ({
                      search,
@@ -39,3 +64,6 @@ const AppMenu = ({
 );
 
 export {AppMenu};
+export {IAppButtonContentProps};
+export {IAppButtonProps};
+export {IAppMenuProps};

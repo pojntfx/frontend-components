@@ -1,6 +1,15 @@
 import * as React from "react";
-import {IDraggableGridLayoutProps} from "../../types";
 import {DraggableGridLayoutView} from "./DraggableGridLayoutView";
+import {ResponsiveProps} from "react-grid-layout";
+
+interface IDraggableGridLayoutViewProps extends ResponsiveProps {
+    children: JSX.Element[];
+}
+
+interface IDraggableGridLayoutProps extends IDraggableGridLayoutViewProps {
+    storageId: string;
+    disabled?: boolean;
+}
 
 const DraggableGridLayout = ({
                                  storageId,
@@ -12,7 +21,7 @@ const DraggableGridLayout = ({
             JSON.parse((window &&
                 window.localStorage.getItem(storageId)) as string) || {}
         }
-        onLayoutChange={(_, layouts) => {
+        onLayoutChange={(_: any, layouts: any) => {
             !disabled &&
             window &&
             window.localStorage.setItem(storageId, JSON.stringify(layouts));
@@ -24,3 +33,5 @@ const DraggableGridLayout = ({
 );
 
 export {DraggableGridLayout};
+export {IDraggableGridLayoutProps};
+export {IDraggableGridLayoutViewProps};
